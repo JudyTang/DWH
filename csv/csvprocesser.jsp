@@ -14,7 +14,7 @@ public class CSVProcesser
 {
    	public static void processCSV(Clob clob) throws IOException,SQLException {
 
-		String sql = "INSERT INTO csv_tmp(LINE_NUMBER,COLUMN_NUMBER,CELL_VALUE) VALUES (?,?,?)";
+		String sql = "INSERT INTO csv_to_table_tmp(LINE_NUMBER,COLUMN_NUMBER,CELL_VALUE) VALUES (?,?,?)";
 
 		CsvReader reader = null;
 		Connection conn = null;
